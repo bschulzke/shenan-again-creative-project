@@ -1,0 +1,37 @@
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+  color: 
+  #379472
+  ;
+}
+
+.bg-dark {
+  background-color: #315e56 !important;
+}
+
+.background-image {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: -100;
+  filter: grayscale(50%);
+  opacity: 0.75;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+}
+
+h1 {
+  text-align: center;
+  border: 1px solid grey;
+  border-radius: 15px;
+  width: 33vw;
+  padding: 1rem;
+  background-color: #a9bab7;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
