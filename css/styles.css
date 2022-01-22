@@ -8,6 +8,10 @@
   ;
 }
 
+a {
+  target: "_blank";
+}
+
 .active {
   color: #379472 !important;
 }
