@@ -8,10 +8,6 @@
   ;
 }
 
-a {
-  target: "_blank";
-}
-
 .active {
   color: #379472 !important;
 }
@@ -83,11 +79,15 @@ body {
   .image-grid {
     flex-direction: column;
   }
-  .info {
-    display: none;
+  .optional {
+    display: none; 
   }
   .square-image {
     margin-top: 1rem;
+  }
+  .info {
+    width: auto;
+    max-width: 33vh;
   }   
 }
 
