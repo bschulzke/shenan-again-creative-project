@@ -13,8 +13,27 @@
   ;
 }
 
+.fixed-bottom {
+  height: 2rem;;
+}
+
+.nav-item {
+  width: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-link {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .active {
-  color: white !important;
+  border: 1px solid white;
+  border-radius: 5px;
 }
 
 .bg-dark, .info {
@@ -26,6 +45,7 @@
 }
 
 .info {
+  font-size: 1.5rem; 
   color: white;
   text-align: center;
   border: 1px solid grey;
@@ -36,10 +56,15 @@
   opacity: 85%;
 }
 
+hr {
+  border-top: 1px solid white;
+}
+
 .main-view {
   height: 100%;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 a {
@@ -72,6 +97,10 @@ a {
 
 .profile {
   border-radius: 15px 0 0 15px;
+}
+
+html {
+  height: 75%;
 }
 
 body {
