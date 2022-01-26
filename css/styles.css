@@ -1,5 +1,5 @@
 * {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family:Arial, Helvetica, sans-serif;
   color: white;
 }
 
@@ -51,6 +51,7 @@ body {
 }
 
 .info-header {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 2rem; 
 }
 
@@ -73,6 +74,7 @@ body {
 }
 
 .large-button {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 2rem;
   background-color: #002D61;
   border-radius: 10px;
@@ -211,6 +213,7 @@ a {
 
 .navbar-dark .navbar-nav .nav-link {
   color: #fff;
+  font-family:Arial, Helvetica, sans-serif;
 }
 
 .header {
