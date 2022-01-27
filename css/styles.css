@@ -4,6 +4,10 @@ primary: #001F42
 dark: #0f141a
 light-primary: #002D61
 light-secondary: #004594
+
+others:
+  #3e83D0 (light)
+  #005DC7 (medium light)
 */
 
 * {
@@ -222,7 +226,11 @@ a {
   height: 100vh;
   width: 100vw;
   z-index: -100;
-  opacity: 0.1;
+  opacity: 0.6;
+}
+
+.transparent {
+  opacity: 0.1
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -234,4 +242,12 @@ a {
   display: flex;
   justify-content: center;
   margin: 1rem;
+}
+
+.footer-text {
+  color: gray!important;
+}
+
+.grey-link {
+  text-decoration: underline;
 }
