@@ -15,9 +15,9 @@ others:
   color: white;
 }
 
-html {
+/* html {
   height: 75%;
-}
+} */
 
 body {
   height: 100%;
@@ -68,19 +68,20 @@ body {
 }
 
 .info {
+  margin: 1rem;
   font-size: 1rem;
   color: white;
   border: 1px solid grey;
   border-radius: 15px;
-  max-width: 50vw;
+  width: 45vw;
   padding: 1rem;
   opacity: 85%;
-  max-height: 80vh;
+  max-height: 75vh;
   padding: 5rem;
 }
 
 .button-wrapper {
-  margin-top: 1rem;
+  padding: 1rem;
   display: flex;
   justify-content: center;
 }
@@ -129,17 +130,28 @@ body {
 }
 
 .main-view {
-  margin: 2rem;
-  height: 100%;
+  /* height: 100vh; */
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  padding: 2rem 0;
 }
 
 a {
+  color: #3e83D0;
+}
+
+.nav-item > a:not(.grey-link) {
   color: white !important;
   opacity: 100%!important;
- /* text-decoration: underline; */
+  text-decoration: none;
+}
+
+.button-wrapper > a {
+  color: white !important;
+  opacity: 100%!important;
+  text-decoration: none;
 }
 
 .about {
@@ -179,11 +191,8 @@ a {
 }
 
 @media only screen and (max-width: 900px) {
-  html {
-    height: 85%;
-  }
   .main-view {
-    margin: 0;
+    padding: 1rem;
   }
   .image-grid {
     flex-direction: column;
@@ -196,7 +205,8 @@ a {
     /* text-align: center; */
     width: auto;
     max-width: 50vh;
-    max-height: 100vh; /* TODO: Fix mobile view */
+    max-height: 80%;
+    /* max-height: 75%; TODO: Fix mobile view */
     padding: 1rem;
   }
   .bg-dark {
@@ -212,13 +222,6 @@ a {
   .large-button {
     padding: 1rem;
   }   
-}
-
-@media all and (orientation: landscape) {
-  .info {
-    max-width: 40rem;
-    height: auto;
-  }
 }
 
 .background-image {
