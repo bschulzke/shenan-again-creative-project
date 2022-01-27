@@ -80,6 +80,14 @@ body {
   padding: 5rem;
 }
 
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
 .button-wrapper {
   padding: 1rem;
   display: flex;
@@ -135,7 +143,6 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 0;
 }
 
 a {
