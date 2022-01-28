@@ -27,6 +27,7 @@ body {
 
 .navbar {
   height: 60px;
+  z-index: 100;
 }
 
 .fixed-bottom {
@@ -52,13 +53,22 @@ body {
   border-radius: 5px;
 }
 
+.dropdown-item:hover {
+  border: solid grey 2px;
+  border-radius: 5px;
+}
+
 .active {
   border: 1px solid white;
   border-radius: 5px;
 }
 
-.bg-dark, .info, .info-small {
+.bg-dark, .info, .info-small, .dropdown, .dropdown-menu, .dropdown-item {
   background-color: #0f141a!important;
+}
+
+.dropdown-menu {
+  border-radius: 10px;
 }
 
 .info-header {
@@ -77,19 +87,6 @@ body {
   opacity: 85%;
   /* max-height: 75vh; */
   padding: 5rem;
-}
-
-.info-small {
-  margin: 1rem;
-  font-size: 1rem;
-  color: white;
-  border: 1px solid grey;
-  border-radius: 15px;
-  width: 40vw;
-  padding: 1rem;
-  opacity: 85%;
-  /* max-height: 75vh; */
-  padding: 0.5rem 6rem;
 }
 
 .float-right {
@@ -162,6 +159,7 @@ body {
 .grid-image {
   width: 33%;
   height: 33%;
+  border-radius: 10px;
 }
 
 .main-view {
@@ -181,6 +179,10 @@ a:not(.nav-item) {
   text-decoration: none;
 }
 
+.dropdown-item {
+  color: white !important;
+  opacity: 100%!important;
+}
 
 .button-wrapper > a {
   color: white !important;
