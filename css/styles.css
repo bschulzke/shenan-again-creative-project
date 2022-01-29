@@ -256,7 +256,7 @@ a:not(.nav-item) {
   .info {
     width: auto;
     max-width: 50vh;
-    max-height: 80vh;
+    height: auto;
     padding: 1rem;
   }
   .bg-dark {
