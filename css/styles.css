@@ -229,6 +229,15 @@ a:not(.nav-item) {
 }
 
 @media only screen and (max-width: 900px) {
+  .navbar-collapse > .navbar-nav {
+    margin-left: auto;
+  }
+  .nav-item {
+    width: 20rem;
+  }
+  .nav-link {
+    width: 20rem;
+  }
   .main-view {
     height: auto;
     padding: 2rem;
