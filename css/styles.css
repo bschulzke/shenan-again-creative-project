@@ -108,7 +108,7 @@ body {
 }
 
 .vertical-center {
-  margin: 0;
+  margin: 1rem;
   position: absolute;
   top: 50%;
   -ms-transform: translateY(-50%);
@@ -256,7 +256,7 @@ a:not(.nav-item) {
   .info {
     width: auto;
     max-width: 50vh;
-    max-height: 80%;
+    max-height: 80vh;
     padding: 1rem;
   }
   .bg-dark {
