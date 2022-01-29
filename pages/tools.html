@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <img class="background-image" src="/images/background.png"/>
+    <img class="background-image light-background-image" src="/images/background.png"/>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="/index.html"><img height=50px; src="/images/clock.png"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,37 +37,39 @@
       </ul>
     </div>
   </nav>
-  <div class="grid-view fullscreen">
-    <img src="/images/chart-key.png"/>
-    <div class="info">
-      <div class="info-header">
-        Probability Charts
+  <div class="light-theme">
+    <div class="grid-view">
+      <img class="fullscreen" src="/images/chart-key.png"/>
+      <div class="info">
+        <div class="info-header">
+          Probability Charts
+        </div>
+        <p>
+          Use these charts to help decide how many dice you'll roll for a given challenge
+        </p>
+        <p>The tables show the nunber of dice rolled on the left, and on the right,
+          the probability of rolling at least one of the target number(s)</p>
+        <p>
+          The charts show the same info, graphed visually on a curve
+        </p>
+        <p> 
+          For example, if you roll three dice, you've only got a 42% chance of rolling at least one 6, 
+          while on five dice, that goes up to 60%
+        </p>
+        <p>See the <a href="/pages/rulebook.html">rulebook</a> for details on challenges rolls</p>
       </div>
-      <p>
-        Use these charts to help decide how many dice you'll roll for a given challenge
-      </p>
-      <p>The tables show the nunber of dice rolled on the left, and on the right,
-        the probability of rolling at least one of the target number(s)</p>
-      <p>
-        The charts show the same info, graphed visually on a curve
-      </p>
-      <p> 
-        For example, if you roll three dice, you've only got a 42% chance of rolling at least one 6, 
-        while on five dice, that goes up to 60%
-      </p>
-      <p>See the <a href="/pages/rulebook.html">rulebook</a> for details on challenges rolls</p>
     </div>
+      <div class="grid-view">
+        <img class="grid-image" src="/images/table-6.png"/>
+        <img class="grid-image" src="/images/table-5-6.png"/>
+        <img class="grid-image" src="/images/table-4-5-6.png"/>
+      </div>
+      <div class="grid-view">
+      <img class="grid-image" src="/images/chart-6.png"/>
+      <img class="grid-image" src="/images/chart-5-6.png"/>
+      <img class="grid-image" src="/images/chart-4-5-6.png"/>
+    </div>      
   </div>
-  <div class="grid-view">
-    <img class="grid-image" src="/images/table-6.png"/>
-    <img class="grid-image" src="/images/table-5-6.png"/>
-    <img class="grid-image" src="/images/table-4-5-6.png"/>
-  </div>
-  <div class="grid-view">
-    <img class="grid-image" src="/images/chart-6.png"/>
-    <img class="grid-image" src="/images/chart-5-6.png"/>
-    <img class="grid-image" src="/images/chart-4-5-6.png"/>
-  </div>      
   <nav class="navbar footer fixed-bottom navbar-dark bg-dark">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">

@@ -89,6 +89,20 @@ body {
   padding: 5rem;
 }
 
+.light-theme {
+  color: black;
+  background-color: #A5AFBB;
+  opacity: 85%;
+}
+
+.light-theme > p {
+  color: black;
+}
+
+.light-theme > div {
+  color: black;
+}
+
 .float-right {
   float: right;
 }
@@ -221,6 +235,8 @@ a:not(.nav-item) {
   }
   .grid-view {
     flex-direction: column;
+    padding: 1rem;
+    padding-bottom: 3rem;
   }
   .grid-image {
     width: 100%;
@@ -258,6 +274,10 @@ a:not(.nav-item) {
   width: 100vw;
   z-index: -100;
   opacity: 0.6;
+}
+
+.light-background-image {
+  opacity: 100%;
 }
 
 .transparent {
