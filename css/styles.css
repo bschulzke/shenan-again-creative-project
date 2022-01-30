@@ -235,8 +235,14 @@ a:not(.nav-item) {
   .nav-item {
     width: 20rem;
   }
-  .nav-link {
+  .navbar:not(.footer) > .navbar-nav > .nav-item:not(.footer-text) {
     width: 20rem;
+  }
+  .nav-link:not(.footer-text) {
+    width: 20rem;
+  }
+  .footer > .navbar-nav > .nav-item {
+    width: auto;
   }
   .main-view {
     height: auto;
