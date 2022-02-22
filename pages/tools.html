@@ -39,7 +39,9 @@
       </ul>
     </div>
   </nav>
-  <div id="tools-sidebar">
+
+  <div class="light-theme">
+    <div id="tools-sidebar">
       <div id="tools-collapse" class="collapse-icon" onclick="toggleTools()">&plus;</div>
       <div id="tools-menu">
         <ul class="navbar-nav mr-auto">
@@ -54,7 +56,7 @@
           </li>
       </div>
     </div>
-  <div class="light-theme">
+  <div>
     <div id="charts" onclick="closeTools()">
       <div class="grid-view">
         <img class="fullscreen" src="/images/chart-key.png"/>
@@ -75,28 +77,33 @@
             while on five dice, that goes up to 60%
           </p>
           <p>See the <a href="/pages/rulebook.html">rulebook</a> for details on challenges rolls</p>
+          <p>Also see our <a class="tool-link" onclick="openTool('calculator')">probability calculator</a></p>
         </div>
       </div>
+      <div class="light-theme">
         <div class="grid-view">
           <img class="grid-image" src="/images/table-6.png"/>
           <img class="grid-image" src="/images/table-5-6.png"/>
           <img class="grid-image" src="/images/table-4-5-6.png"/>
         </div>
-        <div class="grid-view">
+      <div class="grid-view">
         <img class="grid-image" src="/images/chart-6.png"/>
         <img class="grid-image" src="/images/chart-5-6.png"/>
         <img class="grid-image" src="/images/chart-4-5-6.png"/>
-      </div>      
+      </div>
+      <div class="grid-view">
+      </div>  
+      </div>    
     </div>
     </div>
-    <div class="light-theme">
+    <div>
       <div id="calculator" onclick="closeTools()">
         <div class="grid-view">
           <div class="info">
             <div class="info-header">
               Probability Calculator
             </div>
-            <p>Calculate how likely you are to roll at least one six</p>
+            <p>Calculate how likely you are to roll at least one six on any number of dice.</p>
           </div>
           <div class="prob-calculator">
             <div class="prob-selector">
@@ -108,12 +115,12 @@
                 <div class="plus" onclick="subtractDice()">&minus;</div>
               </div>
             </div>
+            <h2 id="prob-results"></h2>
           </div>
-          <h2 id="prob-results"></h2>
         </div>           
       </div>
       </div>
-      <div class="light-theme">
+      <div>
         <div id="roles" onclick="closeTools()">
           <div class="grid-view">
             <div class="info">
@@ -129,7 +136,9 @@
                   <option value="hacker">Hacker</option>
                 </select>
                 <br>
-                <a class="large-button" onclick="getRole()">Generate</a>
+                <div class="button-wrapper">
+                  <a class="large-button" onclick="getRole()">Generate</a>
+                </div>
               </div>
             </div>
             <div class="grid-view card">
@@ -139,6 +148,7 @@
             </div>
           </div>
         </div>
+  </div>
     
   <nav class="navbar footer fixed-bottom navbar-dark bg-dark">
     <ul class="navbar-nav mr-auto">
@@ -146,7 +156,7 @@
         <a class="footer-text grey-link" href="https://github.com/bschulzke/shenan-again-creative-project"  target="_blank">GitHub</a>
       </li>
     </ul>
-    <a class="grey-link footer-text" href="https://forms.gle/86kuP8G59N3anrbX7" target="_blank">Contact Us</a>
+    <a class="grey-link footer-text" href="contact.html">Contact Us</a>
     <a class="footer-text fullscreen">&copy; 2022 Ben Schulzke</a>
   </nav>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
