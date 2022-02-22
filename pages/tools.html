@@ -96,19 +96,21 @@
             <div class="info-header">
               Probability Calculator
             </div>
-            <p>Use this calculator to decide how many dice to roll for a given challenge</p>
+            <p>Calculate how likely you are to roll at least one six</p>
           </div>
           <div class="prob-calculator">
-            <div class="form-outline">
-              <input onchange="calculate()" type="number" id="dice-selector" class="form-control" />
-              <label class="form-label" for="typeNumber">Number input</label>
+            <div class="prob-selector">
+              <div class="form-outline">
+                <input max=18 min=0 value=0 onchange="calculate()" type="number" id="dice-selector" class="form-control" />
+              </div>
+              <div class="incrementer">
+                <div class="plus" onclick="addDice()">&plus;</div>
+                <div class="plus" onclick="subtractDice()">&minus;</div>
+              </div>
             </div>
           </div>
-        </div> 
-        <div class="grid-view">
-        </div>
-        <div class="grid-view">
-        </div>    
+          <h2 id="prob-results"></h2>
+        </div>           
       </div>
       </div>
       <div class="light-theme">
@@ -135,10 +137,6 @@
               </div>
             </div>
             </div>
-          </div>
-          <div class="grid-view">
-          </div>
-          <div class="grid-view">
           </div>
         </div>
     
