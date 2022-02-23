@@ -18,6 +18,9 @@ let probsOnSix = [
     94,
     95,
     96,
+    97,
+    97,
+    98
 ]
 
 function calculate() {
@@ -25,7 +28,7 @@ function calculate() {
         console.log("empty dice selector");
         return;
     }
-    else if ($('#dice-selector').val() <= 18) {
+    else if ($('#dice-selector').val() <= 21) {
         document.getElementById("prob-results").innerText = (probsOnSix[$('#dice-selector').val()] 
         + "% chance of rolling at least one six on " + $('#dice-selector').val() + " dice");
     } else {
