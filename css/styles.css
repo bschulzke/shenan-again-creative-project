@@ -122,10 +122,6 @@ body {
   width: 100%;
 }
 
-#calculator {
-  display: none;
-}
-
 #prob-results {
   margin: 1rem 0;
   color: black;
@@ -361,6 +357,9 @@ a:not(.nav-item) {
 }
 
 #roles {
+  display: none;
+}
+#charts {
   display: none;
 }
 

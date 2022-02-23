@@ -23,18 +23,39 @@ function closeTools() {
 function openTool(id) {
     closeOtherTools(id);
     $(`#${id}`).show();
+    makeActive(id);
+}
+
+function makeActive(id) {
+    let menuId = "";
+    if (id === "calculator") {
+        menuId = "calculator-menu-option";
+    }
+    if (id === "charts") {
+        menuId = "charts-menu-option";
+    }
+    if (id === "roles") {
+        menuId = "roles-menu-option";
+    }
+    if (!document.getElementById(menuId).classList.contains("active")) {
+        document.getElementById(menuId).classList.add("active");
+    }
 }
 
 function closeOtherTools(id) {
     if (id !== "calculator") {
         $("#calculator").hide();
+        document.getElementById("calculator-menu-option").classList.remove("active");
     }
     if (id !== "charts") {
         $("#charts").hide();
+        document.getElementById("charts-menu-option").classList.remove("active");
     }
     if (id !== "roles") {
         $("#roles").hide();
+        document.getElementById("roles-menu-option").classList.remove("active");
     }
+
 }
 
 function toggleToolsMenuIcon() {
