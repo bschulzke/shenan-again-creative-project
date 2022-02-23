@@ -104,18 +104,21 @@
               Probability Calculator
             </div>
             <p>Calculate how likely you are to roll at least one six on any number of dice.</p>
-          </div>
-          <div class="prob-calculator">
-            <div class="prob-selector">
-              <div class="form-outline">
-                <input max=18 min=0 value=0 onchange="calculate()" type="number" id="dice-selector" class="form-control" />
-              </div>
-              <div class="incrementer">
-                <div class="plus" onclick="addDice()">&plus;</div>
-                <div class="plus" onclick="subtractDice()">&minus;</div>
+            <div class="prob-calculator">
+              <div class="prob-selector">
+                <div class="form-outline">
+                  <input max=18 min=0 value=0 onchange="calculate()" type="number" id="dice-selector" class="form-control" />
+                </div>
+                <div class="incrementer">
+                  <div class="plus" onclick="addDice()">&plus;</div>
+                  <div class="plus" onclick="subtractDice()">&minus;</div>
+                </div>
               </div>
             </div>
-            <h2 id="prob-results"></h2>
+          </div>
+          <div id="prob-card" class="grid-view card">
+            <div id="prob-results" class="card-text">
+            </div>
           </div>
         </div>           
       </div>
