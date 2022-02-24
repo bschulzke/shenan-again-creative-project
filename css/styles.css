@@ -136,8 +136,9 @@ body {
   color: white;
   border: 1px solid grey;
   border-radius: 5px;
-  width: 2rem;
-  height: 2.5rem;
+  padding: .4rem;
+  /* width: 6rem; */
+  height: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;

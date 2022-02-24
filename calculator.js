@@ -37,6 +37,20 @@ function calculate() {
     $("#prob-card").show();
 }
 
+// ** Mousedown function for click and hold incrementing **
+// document.getElementById("add-dice").addEventListener('mousedown', function(event) { 
+//     // simulating hold event
+//     setTimeout(function() {
+//       // You are now in a hold state, you can do whatever you like!
+//       let value = 0;
+//     if (!isEmpty($('#dice-selector').val())) {
+//         value = parseInt($('#dice-selector').val()) + 1;
+//     }
+//         document.getElementById("dice-selector").value = value;
+//         document.getElementById("dice-selector").innerText = value;
+//     }, 500);
+//   });
+
 function addDice() {
     let value = 0;
     if (!isEmpty($('#dice-selector').val())) {

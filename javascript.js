@@ -9,14 +9,14 @@ function toggleTools() {
         toolsOpen = true;
     } else {
         $("#tools-menu").hide();
-        document.getElementById("tools-collapse").innerHTML = "&plus;";
+        document.getElementById("tools-collapse").innerHTML = "Tools";
         toolsOpen = false;
     }
 }
 
 function closeTools() {
     $("#tools-menu").hide();
-    document.getElementById("tools-collapse").innerHTML = "&plus;";
+    document.getElementById("tools-collapse").innerHTML = "Tools";
     toolsOpen = false;
 }
 
