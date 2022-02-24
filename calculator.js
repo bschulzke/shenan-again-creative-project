@@ -32,7 +32,7 @@ function calculate() {
         document.getElementById("prob-results").innerText = (probsOnSix[$('#dice-selector').val()] 
         + "% chance of rolling at least one six on " + $('#dice-selector').val() + " dice");
     } else {
-        document.getElementById("prob-results").innerText = "99% chance of rolling at least one six on " + $('#dice-selector').val() + " dice";
+        document.getElementById("prob-results").innerText = "99% chance or higher of rolling at least one six on " + $('#dice-selector').val() + " dice";
     }
     $("#prob-card").show();
 }
