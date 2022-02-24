@@ -102,7 +102,7 @@ body {
 }
 
 #tools-sidebar {
-  position: fixed;
+  position: absolute;
   z-index: 100;
   display: flex;
 }
