@@ -7,9 +7,9 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/styles.css" />
   <link rel="icon" href="/clock-icon.ico">
-  <script src="/javascript.js"></script>
-  <script src="/roles.js"></script>
-  <script src="/calculator.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/roles.js"></script>
+  <script src="/js/calculator.js"></script>
   <title>Shenan-Again</title>
 </head>
 
@@ -45,14 +45,14 @@
     <div id="tools-sidebar">
       <div id="tools-collapse" class="collapse-icon" onclick="toggleTools()">Tools</div>
       <div id="tools-menu">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
+        <ul class="navbar-nav mr-auto tools-nav">
+          <li class="nav-item tools-item">
             <a id="calculator-menu-option" class="nav-link active" onclick="openTool('calculator')">Calculator<span class="sr-only"></span></a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item tools-item">
             <a id="charts-menu-option" class="nav-link" onclick="openTool('charts')">Charts</a>
           </li>
-          <li id="roles-menu-option" class="nav-item">
+          <li id="roles-menu-option" class="nav-item tools-item">
             <a class="nav-link" onclick="openTool('roles')">Characters</a>
           </li>
       </div>

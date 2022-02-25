@@ -24,6 +24,7 @@ function openTool(id) {
     closeOtherTools(id);
     $(`#${id}`).show();
     makeActive(id);
+    closeTools();
 }
 
 function makeActive(id) {
