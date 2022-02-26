@@ -28,7 +28,11 @@ function calculate() {
         console.log("empty dice selector");
         return;
     }
-    else if ($('#dice-selector').val() <= 21) {
+    if ($('#dice-selector').val() < 0) {
+        document.getElementById("dice-selector").value = 0;
+        document.getElementById("dice-selector").innerText = 0;
+    }
+    if ($('#dice-selector').val() <= 21) {
         document.getElementById("prob-results").innerText = (probsOnSix[$('#dice-selector').val()] 
         + "% chance of rolling at least one six on " + $('#dice-selector').val() + " dice");
     } else {
