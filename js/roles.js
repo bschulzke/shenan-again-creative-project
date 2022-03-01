@@ -7,7 +7,7 @@ function getRole() {
 
         adjective = adjectives[adjIndex];
 
-        noun = nouns[nounIndex];
+        noun = randomNoun();
 
         let role = $('#role-selector').val();
 
@@ -17,15 +17,43 @@ function getRole() {
             role = roles[roleIndex];
         }
 
+        noun = appendNoun(noun)
+
         let article = getArticle(noun);
 
-        let insertString1 = "\"" +  adjective + " " + role + " with " + article + " " + noun + "\"";
-        document.getElementById("generated-role").innerText = insertString1;
+        let insertString = "\"" +  adjective + " " + role + " with " + article + " " + noun;
+        insertString += "\"";
+        document.getElementById("generated-role").innerText = insertString;
+}
+
+function appendNoun(noun) {
+    if (!isAdjective(noun)) {
+        return noun;
+    } else {
+        return (appendNoun(noun + " " + randomNoun()));
+    }
+}
+
+function randomNoun() {
+    let nounIndex = getRandomInt(nouns.length);
+    let noun = nouns[nounIndex];
+    return noun;
 }
 
 function isVowel(char) {
     return (
         char === 'a' || char === 'e' || char === 'i' || char === 'o' || char === 'u'
+    );
+}
+
+function isAdjective(noun) {
+    isGerund = noun.charAt(noun.length - 1) === 'g' && noun.charAt(noun.length - 2) === 'n' && noun.charAt(noun.length - 3) === 'i';
+    endsInY = noun.charAt(noun.length - 1) === 'y' && (noun.charAt(noun.length - 2) === 'c' || noun.charAt(noun.length - 2) === 'g' || noun.charAt(noun.length - 2) === 'm');
+    ual = noun.charAt(noun.length - 1) === 'l' && noun.charAt(noun.length - 2) === 'a' && noun.charAt(noun.length - 3) === 'u';
+    ics = noun.charAt(noun.length - 1) == 's' && noun.charAt(noun.length - 2) == 'c' && noun.charAt(noun.length - 3) == 'i';
+    ial =  noun.charAt(noun.length - 1) == 'l' && noun.charAt(noun.length - 2) == 'a' && noun.charAt(noun.length - 3) == 'i';
+    return (
+        isGerund || endsInY || ual || ics || ial
     );
 }
 
