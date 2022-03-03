@@ -44,14 +44,9 @@ let calculator = new Vue({
             this.numDice++;
         },
         subtractDice() {
-            this.numDice--;
+            if (this.numDice > 0) {
+                this.numDice--;
+            }
         }
     },
-    watchers: {
-        numDice: function () {
-            if (this.numDice < 0) {
-              this.numDice = 0;
-            }
-    }
-}
 });
