@@ -137,6 +137,10 @@ body {
   font-style: italic;
 }
 
+.number-dropdown {
+  width: 6rem;
+}
+
 .collapse-icon {
   color: white!important;
   text-align: center;

@@ -103,7 +103,13 @@
             <div class="info-header">
               Probability Calculator
             </div>
-            <p>Calculate how likely you are to roll at least one six on any number of dice.</p>
+            <p>Calculate how likely you are to roll at least one 
+                <select v-model="targets" class="form-select number-dropdown" aria-label="Default select example">
+                  <option class="number-dropdown" value="six" selected>6</option>
+                  <option class="number-dropdown" value="fiveOrSix">5 or 6</option>
+                  <option class="number-dropdown" value="fourFiveOrSix" >4, 5 or 6</option>
+                </select>
+               on any number of dice.</p>
             <div class="prob-calculator">
               <div class="prob-selector">
                 <div class="form-outline">
@@ -116,11 +122,6 @@
                   </div>
                 </div>
               </div>
-              <select v-model="targets" class="form-select" aria-label="Default select example">
-                <option value="six" selected>six</option>
-                <option value="fiveOrSix">five or six</option>
-                <option value="fourFiveOrSix" >four five or six</option>
-              </select>
             </div>
           </div>
           <div id="prob-card" class="grid-view card">
