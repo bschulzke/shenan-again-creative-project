@@ -13,11 +13,8 @@ function getRole() {
 
         if($('#role-selector').val() === "random") {
             roleIndex = getRandomInt(roles.length);
-            console.log(roleIndex);
             role = roles[roleIndex];
         }
-
-        noun = appendNoun(noun)
 
         let article = getArticle(noun);
 
@@ -37,6 +34,7 @@ function appendNoun(noun) {
 function randomNoun() {
     let nounIndex = getRandomInt(nouns.length);
     let noun = nouns[nounIndex];
+    noun = appendNoun(noun);
     return noun;
 }
 
@@ -52,8 +50,10 @@ function isAdjective(noun) {
     ual = noun.charAt(noun.length - 1) === 'l' && noun.charAt(noun.length - 2) === 'a' && noun.charAt(noun.length - 3) === 'u';
     ics = noun.charAt(noun.length - 1) == 's' && noun.charAt(noun.length - 2) == 'c' && noun.charAt(noun.length - 3) == 'i';
     ial =  noun.charAt(noun.length - 1) == 'l' && noun.charAt(noun.length - 2) == 'a' && noun.charAt(noun.length - 3) == 'i';
+    inal = noun.charAt(noun.length - 1) == 'l' && noun.charAt(noun.length - 2) == 'a' && noun.charAt(noun.length - 3) == 'n' && noun.charAt(noun.length - 4) === 'i';
+    isColor = colors.includes(noun);
     return (
-        isGerund || endsInY || ual || ics || ial
+        isGerund || endsInY || ual || ics || ial || inal || isColor
     );
 }
 
@@ -77,8 +77,9 @@ function getRandomInt(max) {
         "con",
         "hacker",
         "muscle",
-        
     ]
+
+    let colors = ['red','orange','yellow','green','blue','purple','pink','grey','black','brown']
 
     let adjectives = ['abandoned',
     'able',
