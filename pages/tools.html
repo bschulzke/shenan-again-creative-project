@@ -116,11 +116,16 @@
                   </div>
                 </div>
               </div>
+              <select v-model="targets" class="form-select" aria-label="Default select example">
+                <option value="six" selected>six</option>
+                <option value="fiveOrSix">five or six</option>
+                <option value="fourFiveOrSix" >four five or six</option>
+              </select>
             </div>
           </div>
           <div id="prob-card" class="grid-view card">
             <div id="prob-results" class="card-text">
-              {{ percentChance }}% chance of rolling at least one six on {{numDice}} dice
+              {{ percentChance }}% chance of rolling at least one {{targetPhrase}} on {{numDice}} dice
             </div>
           </div>
         </div>           
