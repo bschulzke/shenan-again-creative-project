@@ -1,3 +1,4 @@
+//  <div oncontextmenu="functionName();return false;"></div>
 let calculator = new Vue({
     el: "#calculator",
     data: {

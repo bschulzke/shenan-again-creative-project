@@ -4679,7 +4679,6 @@ function getRandomInt(max) {
     'jaguar',
     'jail',
     'jailhouse',
-    'jalapeÃ±o',
     'jam',
     'jar',
     'jasmine',
